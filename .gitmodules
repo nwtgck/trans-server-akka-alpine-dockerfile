@@ -1,0 +1,3 @@
+[submodule "trans-server-akka"]
+	path = trans-server-akka
+	url = https://github.com/nwtgck/trans-server-akka.git
