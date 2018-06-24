@@ -1,6 +1,6 @@
 # NOTE: Multi-stage Build
 
-FROM nwtgck/trans-server-akka:v1.11.0
+FROM nwtgck/pre-installed-sbt:0.13.15
 LABEL maintainer="Ryo Ota <nwtgck@gmail.com>"
 
 # Copy all things in this repo except files in .dockerignore
