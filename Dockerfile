@@ -20,5 +20,9 @@ COPY make-keystore.sh docker-entry.sh /trans/
 # Copy artifacts
 COPY --from=0 /trans/target/scala-2.11/trans-server-akka.jar /trans/target/scala-2.11/trans-server-akka.jar
 
+# Expose ports
+EXPOSE 80
+EXPOSE 443
+
 # Run entry (Run the server)
 ENTRYPOINT ["/trans/docker-entry.sh"]
