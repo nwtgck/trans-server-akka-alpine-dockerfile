@@ -1,7 +1,6 @@
 # NOTE: Multi-stage Build
 
 FROM nwtgck/pre-installed-sbt:0.13.15
-LABEL maintainer="Ryo Ota <nwtgck@gmail.com>"
 
 # Copy all things in this repo except files in .dockerignore
 COPY trans-server-akka /trans
@@ -13,6 +12,8 @@ RUN sbt assembly
 
 # Open JDK 8 - Alpine
 FROM java:openjdk-8-alpine
+LABEL maintainer="Ryo Ota <nwtgck@gmail.com>"
+
 # Make directories
 RUN mkdir -p /trans/target/scala-2.11/
 # Copy scripts
