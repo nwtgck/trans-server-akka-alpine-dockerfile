@@ -6,5 +6,4 @@ if [ ! -e /trans/trans.keystore ]; then
 fi
 
 # Runt the server
-java -jar /trans/target/scala-2.11/trans-server-akka.jar --http-port=80 --https-port=443 "$@"
-
+java -jar /trans/target/scala-2.11/trans-server-akka.jar "$@"
