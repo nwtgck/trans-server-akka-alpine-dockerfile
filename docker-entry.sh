@@ -8,5 +8,5 @@ if [ ! -e /trans/trans.keystore ]; then
   /trans/make-keystore.sh
 fi
 
-# Runt the server
+# Run the server
 java -jar /trans/target/scala-2.11/trans-server-akka.jar "$@"
