@@ -1,6 +1,6 @@
 # NOTE: Multi-stage Build
 
-FROM nwtgck/pre-installed-sbt:0.13.15
+FROM nwtgck/pre-installed-sbt:0.13.18
 
 # Copy all things in this repo except files in .dockerignore
 COPY trans-server-akka /trans
